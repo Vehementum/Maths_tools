@@ -45,15 +45,19 @@ def table_to_latex(table_rows, filename="latex/src/student_worksheet.tex"):
     \input{latex/src/common/common_header.tex}
     \input{latex/src/common/macros/math.tex}
     \input{latex/src/common/macros/theorems.tex}
-    \usepackage[a4paper,hmargin=30mm,vmargin=20mm]{geometry}
+    \usepackage[a4paper,hmargin=30mm,vmargin=15mm]{geometry}
     \usepackage{array}
     \usepackage{tikz}
     \title{\hspace{-2.0cm}\color{astral} \sffamily \bfseries Fiche de calcul mental}
     \author{\hspace{-2.0cm}Stéphane Lejeune}
-    \date{\hspace{-2.0cm}\today}
+    \date{}
 
     \begin{document}
     \maketitle
+    \begin{center}
+    \hspace*{-2cm}
+    \large \textbf{Défi : 50 questions en 5 minutes}
+    \end{center}
     \noindent
     \renewcommand{\arraystretch}{1.6}
     \center
