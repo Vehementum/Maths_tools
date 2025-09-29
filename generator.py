@@ -47,16 +47,16 @@ def table_to_latex(table_rows, filename="outputs/student_worksheet.tex"):
     \input{common/macros/theorems.tex}
     \usepackage[a4paper,hmargin=30mm,vmargin=30mm]{geometry}
     \usepackage{array}
-    \title{\color{astral} \sffamily \bfseries Fiche de calcul mental}
-    \author{Stéphane Lejeune\thanks{Ivan Lejeune}}
-    \date{\today}
+    \title{\hspace{-2.0cm}\color{astral} \sffamily \bfseries Fiche de calcul mental}
+    \author{\hspace{-2.0cm}Stéphane Lejeune\thanks{Ivan Lejeune}}
+    \date{\hspace{-2.0cm}\today}
 
     \begin{document}
     \maketitle
     \noindent
     \renewcommand{\arraystretch}{1.6}
     \center
-    \begin{tabular}{|c|c|c|c||c|c|}
+    \begin{tabular}{|c|c|c|c||p{1cm}|p{1cm}|}
     \hline
     \# & Q1 & \# & Q2 & A1 & A2 \\
     \hline
