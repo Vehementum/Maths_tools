@@ -8,14 +8,14 @@ from models.questions import Question
 def make_percent_of(base_range, pct_range, level):
     base = random.randint(*base_range)
     pct = random.choice(pct_range)
-    result = base * pct / 100
+    result = round(base * pct / 100, 2)
     q = rf"${pct}\% \text{{ of }} {base} = \underline{{\phantom{{999}}}}$"
     return Question(q, f"${result}$", "Percentages", level)
 
 def make_blank_percent_of(base_range, pct_range, level):
     base = random.randint(*base_range)
     pct = random.choice(pct_range)
-    result = base * pct / 100
+    result = round(base * pct / 100, 2)
     q = rf"$\underline{{\phantom{{999}}}}\% \text{{ of }} {base} = {result}$"
     return Question(q, f"${pct}$", "Percentages", level)
 
@@ -36,28 +36,28 @@ def make_blank_percentage_of(base_range, result_range, level):
 def make_increase(base_range, pct_range, level):
     base = random.randint(*base_range)
     pct = random.choice(pct_range)
-    result = base * (1 + pct / 100)
+    result = round(base * (1 + pct / 100), 2)
     q = rf"${base} \text{{ increased by }} {pct}\% = \underline{{\phantom{{999}}}}$"
     return Question(q, f"${result}$", "Percentages", level)
 
 def make_blank_increase(base_range, pct_range, level):
     base = random.randint(*base_range)
     pct = random.choice(pct_range)
-    result = base * (1 + pct / 100)
+    result = round(base * (1 + pct / 100), 2)
     q = rf"${base} \text{{ increased by }} \underline{{\phantom{{999}}}}\% = {result}$"
     return Question(q, f"${pct}$", "Percentages", level)
 
 def make_decrease(base_range, pct_range, level):
     base = random.randint(*base_range)
     pct = random.choice(pct_range)
-    result = base * (1 - pct / 100)
+    result = round(base * (1 - pct / 100), 2)
     q = rf"${base} \text{{ decreased by }} {pct}\% = \underline{{\phantom{{999}}}}$"
     return Question(q, f"${result}$", "Percentages", level)
 
 def make_blank_decrease(base_range, pct_range, level):
     base = random.randint(*base_range)
     pct = random.choice(pct_range)
-    result = base * (1 - pct / 100)
+    result = round(base * (1 - pct / 100), 2)
     q = rf"${base} \text{{ decreased by }} \underline{{\phantom{{999}}}}\% = {result}$"
     return Question(q, f"${pct}$", "Percentages", level)
 
