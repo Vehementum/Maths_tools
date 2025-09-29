@@ -14,6 +14,6 @@ questions = generate_weighted_questions(
 table_rows = questions_to_student_table(questions)
 
 # Output LaTeX
-latex_code = table_to_latex(table_rows, filename="outputs/student_worksheet.tex")
+latex_code = table_to_latex(table_rows, filename="latex/src/student_worksheet.tex")
 
 # 

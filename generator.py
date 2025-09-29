@@ -34,7 +34,7 @@ def questions_to_student_table(questions):
     return table_rows
 
 
-def table_to_latex(table_rows, filename="outputs/student_worksheet.tex"):
+def table_to_latex(table_rows, filename="latex/src/student_worksheet.tex"):
     """
     Convert a 6-column student table into a LaTeX tabular and save to file.
     Assumes all cells are already valid LaTeX (math mode if needed).
@@ -42,13 +42,13 @@ def table_to_latex(table_rows, filename="outputs/student_worksheet.tex"):
     os.makedirs(os.path.dirname(filename), exist_ok=True)
     header = dedent(r"""
     \documentclass[french,a4paper,10pt]{article}
-    \input{common/common_header.tex}
-    \input{common/macros/math.tex}
-    \input{common/macros/theorems.tex}
+    \input{latex/src/common/common_header.tex}
+    \input{latex/src/common/macros/math.tex}
+    \input{latex/src/common/macros/theorems.tex}
     \usepackage[a4paper,hmargin=30mm,vmargin=30mm]{geometry}
     \usepackage{array}
     \title{\hspace{-2.0cm}\color{astral} \sffamily \bfseries Fiche de calcul mental}
-    \author{\hspace{-2.0cm}Stéphane Lejeune\thanks{Ivan Lejeune}}
+    \author{\hspace{-2.0cm}Stéphane Lejeune}
     \date{\hspace{-2.0cm}\today}
 
     \begin{document}
@@ -56,9 +56,7 @@ def table_to_latex(table_rows, filename="outputs/student_worksheet.tex"):
     \noindent
     \renewcommand{\arraystretch}{1.6}
     \center
-    \begin{tabular}{|c|c|c|c||p{1cm}|p{1cm}|}
-    \hline
-    \# & Q1 & \# & Q2 & A1 & A2 \\
+    \begin{tabular}{|c|p{4cm}|c|p{4cm}||p{1cm}|p{1cm}|}
     \hline
     """)
 
