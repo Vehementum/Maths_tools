@@ -45,8 +45,9 @@ def table_to_latex(table_rows, filename="latex/src/student_worksheet.tex"):
     \input{latex/src/common/common_header.tex}
     \input{latex/src/common/macros/math.tex}
     \input{latex/src/common/macros/theorems.tex}
-    \usepackage[a4paper,hmargin=30mm,vmargin=30mm]{geometry}
+    \usepackage[a4paper,hmargin=30mm,vmargin=20mm]{geometry}
     \usepackage{array}
+    \usepackage{tikz}
     \title{\hspace{-2.0cm}\color{astral} \sffamily \bfseries Fiche de calcul mental}
     \author{\hspace{-2.0cm}Stéphane Lejeune}
     \date{\hspace{-2.0cm}\today}
@@ -68,6 +69,20 @@ def table_to_latex(table_rows, filename="latex/src/student_worksheet.tex"):
 
     footer = dedent(r"""
     \end{tabular}
+    \begin{center}
+    \begin{tikzpicture}[thick, node distance=0.2cm] % node distance = espacement par défaut
+        % Deux petits cercles
+        \node[draw,circle,minimum size=1.1cm] (A) {};
+        \node[right=of A] (plus1) {+};
+        \node[right=of plus1, draw,circle,minimum size=1.1cm] (B) {};
+
+        % Signe égal
+        \node[right=of B] (equal) {=};
+        
+        % Grand cercle
+        \node[right=of equal, draw,circle,minimum size=1.7cm] (C) {};
+    \end{tikzpicture}
+    \end{center}                 
     \end{document}
     """)
 
