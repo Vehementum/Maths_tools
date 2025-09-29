@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.29)  29 SEP 2025 09:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.29)  29 SEP 2025 14:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1459,10 +1459,10 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 {d:/Users/Stephane/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{d:/Users/S
 tephane/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{d:/Users/St
 ephane/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{d:/Users/Ste
-phane/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{d:/
-Users/Stephane/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/mnsymbol/MnSymbolD
-.enc}{d:/Users/Stephane/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mat
-hit.enc}] (student_worksheet.aux)
+phane/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/mnsymbol/MnSymbolD.enc}{d:/
+Users/Stephane/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{
+d:/Users/Stephane/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/mnsymbol/MnSymb
+olC.enc}] (student_worksheet.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
@@ -1473,7 +1473,7 @@ Package rerunfilecheck Info: File `student_worksheet.out' has not changed.
 Here is how much of TeX's memory you used:
  40681 strings out of 468130
  922086 string characters out of 5429181
- 1472533 words of memory out of 5000000
+ 1470533 words of memory out of 5000000
  68604 multiletter control sequences out of 15000+600000
  654661 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1484,7 +1484,7 @@ lic/mnsymbol/MnSymbol7.pfb><d:/Users/Stephane/AppData/Local/Programs/MiKTeX/fon
 ts/type1/public/lm/lmmi10.pfb><d:/Users/Stephane/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/lm/lmr10.pfb><d:/Users/Stephane/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/lm/lmr7.pfb>
-Output written on student_worksheet.pdf (1 page, 106338 bytes).
+Output written on student_worksheet.pdf (1 page, 106236 bytes).
 PDF statistics:
  50 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
