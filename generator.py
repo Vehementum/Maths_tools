@@ -48,20 +48,20 @@ def table_to_latex(table_rows, filename="latex/src/student_worksheet.tex"):
     \usepackage[a4paper,hmargin=30mm,vmargin=15mm]{geometry}
     \usepackage{array}
     \usepackage{tikz}
-    \title{\hspace{-2.0cm}\color{astral} \sffamily \bfseries Fiche de calcul mental}
-    \author{\hspace{-2.0cm}Stéphane Lejeune}
+    \title{\hspace{-3cm}\color{astral} \sffamily \bfseries Fiche de calcul mental}
+    \author{\hspace{-3cm}Stéphane Lejeune}
     \date{}
 
     \begin{document}
     \maketitle
     \begin{center}
-    \hspace*{-2cm}
+    \hspace*{-3cm}
     \large \textbf{Défi : 50 questions en 5 minutes}
     \end{center}
     \noindent
     \renewcommand{\arraystretch}{1.6}
     \center
-    \begin{tabular}{|c|p{4cm}|c|p{4cm}||p{1cm}|p{1cm}|}
+    \begin{tabular}{|p{0.4cm}|p{4cm}|p{0.4cm}|p{4cm}||p{1cm}|p{1cm}|}
     \hline
     """)
 
@@ -74,6 +74,7 @@ def table_to_latex(table_rows, filename="latex/src/student_worksheet.tex"):
     footer = dedent(r"""
     \end{tabular}
     \begin{center}
+    \hspace*{1.2cm}
     \begin{tikzpicture}[thick, node distance=0.2cm] % node distance = espacement par défaut
         % Deux petits cercles
         \node[draw,circle,minimum size=1.1cm] (A) {};
