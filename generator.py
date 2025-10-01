@@ -45,22 +45,25 @@ def table_to_latex(table_rows, filename="latex/src/student_worksheet.tex"):
     \input{latex/src/common/common_header.tex}
     \input{latex/src/common/macros/math.tex}
     \input{latex/src/common/macros/theorems.tex}
-    \usepackage[a4paper,hmargin=30mm,vmargin=15mm]{geometry}
+    \usepackage[a4paper,hmargin=20mm,vmargin=0mm]{geometry}
     \usepackage{array}
     \usepackage{tikz}
-    \title{\hspace{-3cm}\color{astral} \sffamily \bfseries Fiche de calcul mental}
-    \author{\hspace{-3cm}Stéphane Lejeune}
+    \usepackage{graphicx}
+    \title{\hspace{-3.5cm}\color{astral} \sffamily \bfseries Fiche de calcul mental}
+    \author{\hspace{-3.5cm}Stéphane Lejeune}
     \date{}
 
     \begin{document}
     \maketitle
+    \thispagestyle{empty}
     \begin{center}
-    \hspace*{-3cm}
+    \hspace*{-3.5cm}
     \large \textbf{Défi : 50 questions en 5 minutes}
     \end{center}
     \noindent
     \renewcommand{\arraystretch}{1.6}
     \center
+    \scalebox{1.25}{
     \begin{tabular}{|p{0.4cm}|p{4cm}|p{0.4cm}|p{4cm}||p{1cm}|p{1cm}|}
     \hline
     """)
@@ -73,8 +76,10 @@ def table_to_latex(table_rows, filename="latex/src/student_worksheet.tex"):
 
     footer = dedent(r"""
     \end{tabular}
+    }
     \begin{center}
     \hspace*{1.2cm}
+    \vspace*{1.2cm}
     \begin{tikzpicture}[thick, node distance=0.2cm] % node distance = espacement par défaut
         % Deux petits cercles
         \node[draw,circle,minimum size=1.1cm] (A) {};
